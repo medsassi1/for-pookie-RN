@@ -92,8 +92,8 @@ div.addEventListener("click", () => {
   if (clickCount >= maxClicks) return;
   clickCount++;
   const maxMovePercent = 5; // move up to ±5%
-  const minleft = 50;
-  const maxleft = 10;
+  const minleft = 80;
+  const maxleft = 30;
   // Calculate new position within [original - maxMovePercent, original + maxMovePercent]
   const newTop =
     originalTop + (Math.random() * 10 * maxMovePercent - maxMovePercent);
