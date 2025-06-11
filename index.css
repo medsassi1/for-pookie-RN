@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+  }
+body{
+    background: linear-gradient(-135deg,rgba(151, 5, 5, 0.924),rgb(247, 16, 16),rgba(226, 13, 13, 0.924),rgb(215, 104, 104));
+    height: 1000px;
+    
+    background-size: 0.5% 0.5%;
+   animation: pulse 50s linear infinite ;
+}
+.all{
+    position: relative;
+    box-shadow: 20px -20px 4px 15px rgba(0, 0, 0, 0.389);
+    margin-top: 5%;
+    justify-items: center;
+    justify-self: center;
+    border: solid;
+    width: 70%;
+    min-width: 600px;
+    height: 1000px;
+    border-radius: 10px;
+    font-size: medium;
+    background: linear-gradient(110deg,rgba(234, 110, 21, 0.924),rgb(231, 204, 156),rgba(238, 126, 7, 0.886),rgb(230, 205, 163));
+    background-size: 300% 300%;
+    animation: pulse 5s linear infinite;
+}
+.center{
+    text-align: center;
+}
+
+div.love{
+    position: relative;
+    top: 7%;
+    animation: floating 3s infinite ease;
+}
+@keyframes floating {
+    0%{top: 7%;}
+    50%{top: 5%;}
+    100%{top: 7%;}
+}
+
+h1{
+    display: inline-block;
+    position: relative;
+    scale: 150%;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+
+}
+.iknew{
+    transition: 0.3s;
+    animation: jump 0.5s linear calc(4);
+}
+h2{
+    display: inline-block;
+    position: relative;
+    scale: 150%;
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: pointer;
+    color: #b62a9e;
+    font-weight: bold;
+    scale: 150%;
+    transition: scale 0.3s;
+}
+.love-underline {
+    position: relative;
+    display: inline-block;
+    color: #a00915; 
+    text-decoration: none;
+}
+
+.love-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    height: 3px;
+    background: repeating-linear-gradient(90deg, #8e0c4d, #ec137f 10px, transparent 10px, transparent 20px);
+    animation: wave 3s infinite linear;
+}
+
+.love-underline:hover::after {
+    height: 4px;
+    background: repeating-linear-gradient(90deg, #c91326, #4e082b 10px, transparent 10px, transparent 20px);
+}
+
+.love-underline:hover::before {
+    content: "💖";
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    transform: translateX(-50%);
+    font-size: 16px;
+    animation: bounce 1s infinite;
+}
+
+@keyframes wave {
+    0% { background-position: -20px; }
+    100% { background-position: 40px; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-5px); }
+}
+@keyframes up {
+    0%{top: 2%;}
+    15%{top: -13%;}
+    30%{top: -11%;}
+    45%{top: -13%;}
+    60%{top: -11.5%;}
+    75%{top: -13.5%;}
+    100%{ top: -11%;}
+}
+.heart-underline {
+    display: inline;
+    position: relative;
+    text-decoration: none;
+    color: #b62a9e;
+    font-weight: bold;
+  }
+  
+  .heart-underline::after {
+    scale: 1.5;
+    content:'❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤';
+    position: absolute;
+    width: 100%;
+    bottom: -70px;
+    left: 5px;
+    font-size: 10px;
+    color: #b62a9fe3;
+    animation: heart-beat 1s infinite;
+  }
+  
+  @keyframes heart-beat {
+    0% { opacity: 0.6;color: #b62a2a; }
+    50% { opacity: 1;color: #f22a45; }
+    100% { opacity: 0.6;color: #ec1f22; }
+  }
+
+a{
+    text-decoration: none;
+    font-family: cursive;
+    color: rgba(37, 41, 41, 0.889);
+}
+.yes{
+    background:linear-gradient(120deg, rgb(94, 254, 97),rgb(10, 130, 8),rgb(94, 254, 97),rgb(10, 130, 8));
+    top:7%;
+    right: 20%;
+    transition: transform 0.2s ease;
+    background-size: 300% 300%;
+    animation: pulse 3s linear infinite;
+}
+.yes:hover{
+    background:linear-gradient(120deg, rgb(94, 254, 97),rgb(19, 222, 15),rgb(94, 254, 97),rgb(19, 222, 15));
+    background-size: 300% 300%;
+    animation: pulse 0.8s linear infinite;
+}
+#answers{
+    scale: 2.3;
+    height: 2.5%;
+    width: 7%;
+    max-width: 45px;
+    border: solid 1px;
+    border-color: #ddd6c0;
+    border-radius: 26px;
+    margin: 50px;
+    text-align: center; 
+    position: relative;
+    cursor: pointer;
+
+}
+#answers1{
+    scale: 2.3;
+    height: 2.5%;
+    width: 7%;
+    max-width: 45px;
+    border: solid 1px;
+    border-color: #ddd6c0;
+    border-radius: 26px;
+    margin: 50px;
+    text-align: center; 
+    position: relative;
+    cursor: pointer;
+
+}
+
+.no{
+    background:linear-gradient(120deg, rgb(254, 94, 94),rgb(130, 12, 8),rgb(254, 94, 94),rgb(130, 8, 8));
+    top:0%;
+    left: 20%;
+    right: auto;
+    background-size: 300% 300%;
+    animation: pulse 3s linear infinite;
+    transition: 0.3s;
+}
+.no:hover{
+    background:linear-gradient(120deg, rgb(254, 94, 94),rgb(130, 12, 8),rgb(254, 94, 94),rgb(130, 8, 8));
+    background-size: 300% 300%;   
+    animation: pulse 0.3s linear infinite;
+
+}
+div.img{
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 5px;
+    border-style: inset ;
+    border-bottom: solid 5px;
+    height: 250px;
+    width: 30%;
+    min-width: 300px;
+    max-width: 450px;
+    background: linear-gradient(135deg, #fa81e8, #fefce0, #fa81e8, #fefce0);
+    background-size: 300% 300%;
+    animation: pulse 4s infinite ease-in-out;
+    cursor: pointer;
+}
+img{
+    margin: -1px 0px 0px -10px;
+    width: 100%;
+    height: 100%;
+    min-width: 200px;
+}
+div.img3,div.img2{
+    position: relative;
+    text-align: center;
+    height: 150px;
+    width: 10%;
+    min-width: 180px;
+    transition: 2.5s;
+}
+div.img2{
+    top: -55%;
+    right: -52%;
+    scale: 0;
+    animation: punsh 3s 0.6s ease-in-out;
+    animation-fill-mode: forwards;
+}
+img.img2{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: img2 ;
+    animation-duration: 0.5s;
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+}
+div.img3{
+    scale: 120%;
+    transform: scaleX(-1);
+    position: relative;
+    left: 0%;
+    top: -100%;
+}
+img.img3{
+    position:absolute;
+    scale: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: img3 ;
+    animation-duration: 0.5s;
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+}
+.page {
+    display: none;
+    text-align: center;
+    padding: 50px;
+    position: relative;
+
+}
+
+.page.active {
+    display: block;
+    transition: opacity 0.6s ease-in;
+}
+
+.btn {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background: linear-gradient(100deg,#e86868,#c22a2a,#e86868,#972222);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    transition:  0.3s;
+    background-size: 300% 300%;
+    animation: pulse 3s linear infinite;
+}
+
+.btn:hover {
+    background-color: #ff4747;
+    transform: scale(1.05);
+}
+#page3 h1 {
+    transform: translateY(100px);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Winky Sans', sans-serif;
+  }
+  
+  #birthdayInput {
+      position: relative;
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    max-width: 80%;
+    top: 150px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  #submitButton {
+      position: relative;
+      top: 150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: pink;
+    border: solid 2px rgb(236, 229, 171);
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative; /* this ensures its position can be changed */
+    transition: top 0.3s ease, left 0.3s ease;
+  }
+  .center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #all{
+      height: 1200px;
+  }
+p{
+    position: relative;
+    transform: translateY(55px);
+    scale: 1.2;
+    font-family: 'Amiri', serif;
+
+}
+
+
