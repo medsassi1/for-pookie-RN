@@ -211,7 +211,7 @@ a{
 
 }
 div.img{
-  margin-top: 10%;
+  margin-top: 20%;
   text-align: center;
   border-radius: 5px;
   border-style: inset ;
@@ -356,6 +356,10 @@ p{
 
 }
 @media (max-width: 768px) {
+  *{
+    box-sizing: border-box;
+    scale: 0.95;
+  }
   .all {
     flex-direction: column;
     padding: 10px;
