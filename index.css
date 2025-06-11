@@ -9,13 +9,14 @@ body{
    animation: pulse 50s linear infinite ;
 }
 .all{
+    max-width: 400px;
     position: relative;
     box-shadow: 20px -20px 4px 15px rgba(0, 0, 0, 0.389);
     margin-top: 5%;
     justify-items: center;
     justify-self: center;
     border: solid;
-    width: 70%;
+    width: 40%;
     min-width: 600px;
     height: 1000px;
     border-radius: 10px;
@@ -354,5 +355,22 @@ p{
     font-family: 'Amiri', serif;
 
 }
+@media (max-width: 768px) {
+    .all {
+      flex-direction: column;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    h1, input, button {
+      font-size: 25px !important;
+    }
+  
+    img {
+      width: 80%;
+      max-width: 300px;
+      height: auto;
+    }
 
-
+  }
+  
